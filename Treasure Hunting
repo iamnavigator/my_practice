@@ -1,0 +1,27 @@
+print('''88           88                                 88  
+           ""           88                                 88  
+                        88                                 88  
+ ,adPPYba, 88 ,adPPYba, 88 ,adPPYYba, 8b,dPPYba,   ,adPPYb,88  
+a8P_____88 88 I8[    "" 88 ""     `Y8 88P'   `"8a a8"    `Y88  
+8PP""""""" 88  `"Y8ba,  88 ,adPPPPP88 88       88 8b       88  
+"8b,   ,aa 88 aa    ]8I 88 88,    ,88 88       88 "8a,   ,d88  
+ `"Ybbd8"' 88 `"YbbdP"' 88 `"8bbdP"Y8 88       88  `"8bbdP"Y8  ''')
+
+print("welcome to Treasure Island")
+print("your mission is to find treasure")
+ 
+cross_road = input("you are at cross road, where do you want to go? type left or right: ").lower()
+if cross_road == "left":
+    lake = input("you have come across to lake, what would you like type 'swim' for swim or type 'wait' to wait: ").lower()
+    if lake == "wait":
+        three_doors = input("you have arrived to an Island and there is a house with three doors 'red', 'blue','yellow'. which one you will choose to open: ").lower()
+        if three_doors == "red":
+            print("Burned by Red Fire! Game Over")
+        if three_doors == "blue":
+            print("Eaten by beast! Game Over")
+        else:
+            print("Congratulations! you have found treasure, you win")
+    else:
+        print("Attacked by trout! Game Over")
+else:
+    print("fall into a hole! Game Over")
