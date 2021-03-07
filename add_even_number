@@ -1,0 +1,6 @@
+total_even_numbers = 0
+
+for numbers in range(0, 101):
+  if numbers % 2 == 0:
+    total_even_numbers += numbers
+print(total_even_numbers)
